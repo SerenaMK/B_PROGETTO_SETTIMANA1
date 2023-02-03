@@ -14,9 +14,11 @@ public class Immagine extends ElementoMultimediale implements Showable {
 	public void show() {
 		
 		System.out.println("- SHOW IMAGE -");
-		System.out.print(this.titolo);
+		System.out.print(this.getTitle());
 			
 		asterischi();
+		
+		System.out.println("");
 	}
 	
 	protected void asterischi() {

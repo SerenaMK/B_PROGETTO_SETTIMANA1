@@ -10,10 +10,6 @@ public class LettoreMultimediale {
 
 	public static void main(String[] args) {
 		
-//		Audio a1 = new Audio("Welcome to the Black Parade.mp3");
-//		Video v1 = new Video("One Flower, One Sword.mp4");
-//		Immagine i1 = new Immagine("Photo.png");
-		
 		// File 1
 		System.out.println("Inserire il titolo del primo file (audio):");
         String title1 = sc.nextLine();
@@ -94,7 +90,7 @@ public class LettoreMultimediale {
         		m.show();
         	}
         	
-        	System.out.println("------------------------------");
+        	System.out.println("\n------------------------------");
         	lettore();
         } else if ( traccia == -1) {
         	System.out.println("Spegnimento in corso...");

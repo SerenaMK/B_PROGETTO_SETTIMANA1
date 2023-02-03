@@ -1,9 +1,10 @@
 package LettoreMultimediale;
 
-public class Video extends Audio implements Playable {
+public class Video extends ElementoMultimediale implements Playable {
 	
 	private int luminosita = 10;
-	private int durata = 5; //interface requires it
+	private int durata = 5;
+	private int volume = 10;
 	
 	public Video (String titolo) {
 		super(titolo);
@@ -16,7 +17,7 @@ public class Video extends Audio implements Playable {
 		System.out.println("- PLAY VIDEO -");
 		
 		for(int i = 0; i < this.durata; i++) {
-			System.out.print(this.titolo);
+			System.out.print(this.getTitle());
 			
 			esclamazioni();
 			asterischi();
@@ -38,6 +39,12 @@ public class Video extends Audio implements Playable {
 	protected void asterischi() {
 		for(int i = 0; i < this.luminosita; i++) {
 			System.out.print("*");
+		}
+	}
+	
+	protected void esclamazioni() {
+		for(int i = 0; i < this.volume; i++) {
+			System.out.print("!");
 		}
 	}
 

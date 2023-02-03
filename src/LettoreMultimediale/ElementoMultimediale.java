@@ -2,7 +2,7 @@ package LettoreMultimediale;
 
 public abstract class ElementoMultimediale {
 	
-	String titolo;
+	private String titolo;
 	
 	public ElementoMultimediale (String titolo) {
 		this.titolo = titolo;
@@ -10,6 +10,12 @@ public abstract class ElementoMultimediale {
 	
 	public String getTitle() {
 		return this.titolo;
+	}
+	
+	public void play() {
+		if (this instanceof Playable) {
+			System.out.println("[PLAY]");
+		}
 	}
 
 }

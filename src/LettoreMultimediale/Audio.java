@@ -17,7 +17,7 @@ public class Audio extends ElementoMultimediale implements Playable {
 		System.out.println("- PLAY AUDIO -");
 		
 		for(int i = 0; i < this.durata; i++) {
-			System.out.print(this.titolo);
+			System.out.print(this.getTitle());
 			
 			esclamazioni();
 			
